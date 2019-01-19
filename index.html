@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./dist/images/logo/logo.ico" />
+    <link rel="stylesheet" href="./dist/images/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <meta
+      name="description"
+      content="Pizza Xprs is the place where you can find the best pizzas & burgers in Pune, India. Once You Have It, You'll Love It."
+    />
+    <meta
+      name="keywords"
+      content="pizza, burger, Pune, India, best pizza, best pizza in Pune, best burger in Pune, Love, Chocolate Pizza, Express, pizza express, pizza train"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>PIZZA XPRS | Once You Have It, You'll Love It</title>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loading__img">
+        <img
+          class="loading__train"
+          src="./dist/images/logo/loading__train.png"
+          alt="loading__train"
+        />
+        <img
+          class="loading__pizza"
+          src="./dist/images/logo/loading__pizza.png"
+          alt="loading__pizza"
+        />
+      </div>
+    </div>
+    <div id="root">
+      <nav class="navigation">
+        <a href="/" title="PIZZA XPRS | Once You Have It, You'll Love It">
+          <img
+            class="nav__logo"
+            src="./dist/images/logo/complogoinver.png"
+            alt="logo"
+          />
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a
+              class="nav__link"
+              href="#home"
+              onclick="return false;"
+              onmousedown="handlenavlinkclick('home');"
+            >
+              HOME
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="#about"
+              onclick="return false;"
+              onmousedown="handlenavlinkclick('about');"
+            >
+              ABOUT US
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="#menu"
+              onclick="return false;"
+              onmousedown="handlenavlinkclick('menu');"
+            >
+              MENU
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="#gallery"
+              onclick="return false;"
+              onmousedown="handlenavlinkclick('gallery');"
+            >
+              GALLERY
+            </a>
+          </li>
+          <li>
+            <a
+              class="nav__link"
+              href="#contact"
+              onclick="return false;"
+              onmousedown="handlenavlinkclick('contact');"
+            >
+              FIND US
+            </a>
+          </li>
+        </ul>
+        <ul class="social__links">
+          <li>
+            <a
+              href="http://www.facebook.com"
+              target="_blank"
+              title="Follow Us On Facebook"
+            >
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.twitter.com"
+              target="_blank"
+              title="Follow Us On Twitter"
+            >
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.instagram.com"
+              target="_blank"
+              title="Follow Us On Instagram"
+            >
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__menutoggle" onclick="ontoggleclick();">
+          <div class="nav__menubar"></div>
+        </div>
+      </nav>
+
+      <div class="ordernow">
+        <div class="ordernow__companies">
+          <h1>Order Online Now At:</h1>
+          <div>
+            <div>
+              <a
+                href="https://www.ubereats.com/en-IN/pune/food-delivery/pizza-xprs/kM1IFaBdTGq-McBNoaS8BA/"
+              >
+                <img
+                  src="./dist/images/companies/ubereats.png"
+                  alt="UberEats"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.zomato.com/pune/pizza-express-kondhwa">
+                <img src="./dist/images/companies/zomato.png" alt="Zomato" />
+              </a>
+            </div>
+            <!-- <div>
+              <a href="http://www.swiggy.com">
+                <img src="./dist/images/companies/swiggy.png" alt="Swiggy" />
+              </a>
+            </div> -->
+          </div>
+        </div>
+        <div onclick="ToggleOrderNow(false);" class="ordernow__cross"></div>
+      </div>
+
+      <div class="home">
+        <img
+          class="home__wallpaper"
+          src="./dist/images/homewallpaper/home__wallpaper.jpg"
+          alt="bgImage"
+        />
+        <header class="home__head">
+          <h1>PIZZA XPRS</h1>
+          <h2>
+            Hop On The Xprs To Taste The Most Delicious Pizza You Will Ever
+            Have.
+          </h2>
+        </header>
+
+        <button onclick="ToggleOrderNow(true);" class="home__button">
+          ORDER ONLINE NOW!
+        </button>
+      </div>
+
+      <div class="about">
+        <h1>ABOUT US</h1>
+        <h2>We are a group of pizza lovers in Pune, India.</h2>
+        <div class="about__paras">
+          <p>
+            Everybody loves pizza. No doubt in that, we just happen to love it
+            so much that we want to share it with everyone. That's how Pizza
+            Xprs was born, the train which will deliver love from us to you in
+            the form of pizza.
+          </p>
+          <p>
+            Our pizza is made from hand stretched slow dough which gives it a
+            nice & crispy thin base. Our motto "Only Fresh Ingredients Allowed",
+            and yes, who can forget the cheese? The amount of cheese we put in
+            the pizza is equal to the amount of love we put in it as well :)
+          </p>
+          <p>
+            Pizza Xprs is located in Hadapsar, Pune. You can find us at
+            <a
+              target="_blank"
+              href="https://www.ubereats.com/en-IN/pune/food-delivery/pizza-xprs/kM1IFaBdTGq-McBNoaS8BA/"
+              >Uber Eats</a
+            >,
+            <a
+              target="_blank"
+              href="https://www.zomato.com/pune/pizza-express-kondhwa"
+              >Zomato</a
+            >
+            and <a target="_blank" href="https://www.swiggy.com">Swiggy</a> .
+            Please follow us on
+            <a target="_blank" href="https://www.twitter.com">Twitter</a>,
+            <a target="_blank" href="https://www.instagram.com">Instagram</a>
+            and
+            <a target="_blank" href="https://www.facebook.com">Facebook</a> to
+            be up to date with the latest news.
+          </p>
+        </div>
+
+        <div class="about__images">
+          <div class="about__image">
+            <img src="./dist/images/about/aimg1.jpg" alt="aimg1" />
+            <div class="about__image--cover"></div>
+            <div class="about__quote">
+              <h1>
+                <q>
+                  Better ingredients, better pizza - it's not a slogan. It's a
+                  way of life.
+                </q>
+              </h1>
+              <h2>- John Schnatter</h2>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="./dist/images/about/aimg2.jpg" alt="aimg2" />
+            <div class="about__image--cover"></div>
+            <div class="about__quote">
+              <h1>
+                <q>
+                  There's no better feeling in the world than a warm pizza box
+                  on your lap.
+                </q>
+              </h1>
+              <h2>- Kevin James</h2>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="./dist/images/about/aimg3.jpg" alt="aimg3" />
+            <div class="about__image--cover"></div>
+            <div class="about__quote">
+              <h1>
+                <q>
+                  Anyone who says that money cannot buy happiness has clearly
+                  never spent their money on pizza.
+                </q>
+              </h1>
+              <h2>- Andrew W.K</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <h1>MENU</h1>
+        <div class="menu__items">
+          <div class="mi__pizzas">
+            <h2>PIZZAS</h2>
+            <p><em>( All Pizzas Come In 7" And 10" )</em></p>
+            <div>
+              <div class="mi__pizzas--veg">
+                <h3>VEGETARIAN</h3>
+                <ul>
+                  <li>
+                    Simply Fresh Pizza <em>( Onion, Capsicum, Tomato )</em>
+                  </li>
+                  <li>Yummy Cheese Pizza <em>( Plain Cheese )</em></li>
+                  <li>
+                    Veggie Lover Pizza
+                    <em>( Olives, Onion, Tomato, Mushroom, Capsicum )</em>
+                  </li>
+                  <li>
+                    Supreme Veg Pizza
+                    <em>( Capsicum, Onion, Mexican Sauce, Green Chilli )</em>
+                  </li>
+                  <li>
+                    P.X. Special Pizza
+                    <em
+                      >( Cottage Cheese Cubes, Capsicum, Onion, Garlic, Corn
+                      )</em
+                    >
+                  </li>
+                  <li>
+                    Paneer Pizza
+                    <em>( Cottage Cheese Cubes, Capsicum, Onion, Garlic )</em>
+                  </li>
+                  <li>
+                    Mushroom Pizza
+                    <em>( Mushrooms, Capsicum, Onion, Garlic )</em>
+                  </li>
+                  <li>Corn Pizza <em>( Corn, Tomato, Onion, Garlic )</em></li>
+                </ul>
+              </div>
+              <div class="mi__pizzas--nonveg">
+                <h3>NON VEGETARIAN</h3>
+                <ul>
+                  <li>
+                    Chicken Italian Pizza
+                    <em>( Chicken, Tomato, Onion, Cheese )</em>
+                  </li>
+                  <li>
+                    Chicken Mexican Pizza
+                    <em>( Onion, Corn, Capsicum, Chicken, Mexican Sauce )</em>
+                  </li>
+                  <li>
+                    Chicken Classic Pizza
+                    <em
+                      >( Chicken, Cottage Cheese, Onion, Garlic, Olive, Capsicum
+                      )</em
+                    >
+                  </li>
+                  <li>
+                    Chi. Cheese & Chilli Pizza
+                    <em
+                      >( Chicken, Mexican Sauce, Green Chilli, Capsicum, Garlic
+                      )</em
+                    >
+                  </li>
+                  <li>
+                    Chicken P.X. Spl. Pizza
+                    <em
+                      >( Chicken, Cottage Cheese Cubes, Capsicum, Onion, Garlic,
+                      Corn )</em
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mi__burgers">
+            <h2>BURGERS</h2>
+            <div>
+              <div class="mi__burgers--veg">
+                <h3>VEGETARIAN</h3>
+                <ul>
+                  <li>Veg Cheese Burger</li>
+                  <li>Mexican Cheese Burger</li>
+                </ul>
+              </div>
+              <div class="mi__burgers--nonveg">
+                <h3>NON VEGETARIAN</h3>
+                <ul>
+                  <li>Chicken Cheese Burger</li>
+                  <li>Chicken Mexican Burger</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mi__kids">
+            <h2>FOR KIDS</h2>
+            <ul>
+              <li>Chocolate Pizza</li>
+              <li>Mixed Fruit Pizza</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <h1>GALLERY</h1>
+        <div class="gallery__images">
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(0);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg1.jpg" alt="gimg1" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(1);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg2.jpg" alt="gimg2" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(2);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg3.jpg" alt="gimg3" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(3);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg4.jpg" alt="gimg4" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(4);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg5.jpg" alt="gimg5" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(5);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg6.jpg" alt="gimg6" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(6);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg7.jpg" alt="gimg7" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(7);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg8.jpg" alt="gimg8" />
+            <div class="gimg__cover"></div>
+          </div>
+          <div
+            class="gimg"
+            onmouseover="gimgMouseOver(8);"
+            onmouseout="gimgMouseOut();"
+          >
+            <img src="./dist/images/gallery/gimg9.jpg" alt="gimg9" />
+            <div class="gimg__cover"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h1>FIND US AT</h1>
+        <div class="contact__links">
+          <div>
+            <a
+              href="https://www.ubereats.com/en-IN/pune/food-delivery/pizza-xprs/kM1IFaBdTGq-McBNoaS8BA/"
+              target="_blank"
+            >
+              <img src="./dist/images/companies/ubereats.png" alt="ubereats" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.zomato.com/pune/pizza-express-kondhwa"
+              target="_blank"
+            >
+              <img src="./dist/images/companies/zomato.png" alt="zomato" />
+            </a>
+          </div>
+          <!-- <div>
+            <a href="http://www.swiggy.com" target="_blank">
+              <img src="./dist/images/companies/swiggy.png" alt="swiggy" />
+            </a>
+          </div> -->
+        </div>
+        <span
+          class="contact__arrowup"
+          onclick="resetScroll();"
+          title="Go To The Top"
+        >
+          <i class="fa fa-angle-up fa-lg"></i>
+        </span>
+      </div>
+
+      <footer>
+        <a
+          href="http://www.amanthedev.com"
+          target="_blank"
+          title="The Guy Who Made This Site"
+          >Aman Kumar</a
+        >
+        &copy; 2019
+      </footer>
+    </div>
+    <script src="./dist/scripts.js"></script>
+  </body>
+</html>

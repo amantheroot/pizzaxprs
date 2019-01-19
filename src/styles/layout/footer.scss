@@ -1,0 +1,17 @@
+footer {
+  cursor: default;
+  background-color: $Color1;
+  color: $Color5;
+  text-align: center;
+  padding: 15px;
+  font-family: $PrimaryFont;
+  a {
+    text-transform: uppercase;
+    color: $Color5;
+    margin-right: 5px;
+    transition: color 0.5s ease;
+    &:hover {
+      color: darken($Color5, 20);
+    }
+  }
+}

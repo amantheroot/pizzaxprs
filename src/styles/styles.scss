@@ -1,0 +1,14 @@
+@import "./partials/normalize";
+@import "./partials/variables";
+@import "./partials/base";
+
+@import "./layout/loading";
+@import "./layout/navigation";
+@import "./layout/ordernow";
+@import "./layout/footer";
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/menu";
+@import "./pages/gallery";
+@import "./pages/contact";

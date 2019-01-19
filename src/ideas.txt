@@ -1,0 +1,35 @@
+* Pages -
+    Home
+    About Us
+    Menu
+    Gallery
+    Find Us
+
+* TECH -
+    HTML
+    CSS
+    JS
+    SASS
+    ES
+
+* STYLES - 
+    Footer
+    Loading
+    Navigation
+    OrderNow
+
+    Home
+    About
+    Menu
+    Gallery
+    Contact
+
+* Have A PreLoader
+* Style The Site
+* Compress The Images
+* Upload To GitHub
+* Write About Us
+Fix Font Issue
+
+Questions - 
+Social Links?

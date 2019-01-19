@@ -1,0 +1,73 @@
+.home {
+  margin-top: $NavHeight; /*NAVIGATION HEIGHT*/
+  position: relative;
+  width: 100%;
+  height: 52.15vw; /*Height of Home Wallpaper*/
+  color: $Color5;
+  overflow: hidden;
+
+  & > * {
+    position: absolute;
+  }
+  .home__wallpaper {
+    width: 100%;
+    height: 100%;
+  }
+  .home__head {
+    cursor: default;
+    top: 42.75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 46.875vw;
+    text-align: center;
+
+    h1 {
+      margin: 0;
+      font-size: 5.25vw;
+      word-spacing: 1vw;
+
+      // display: inline-block;
+      // margin-left: 50%;
+      // transform: translateX(-50%);
+      // white-space: nowrap;
+      // position: relative;
+
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: -6px;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   width: 112.5%;
+      //   height: 2px;
+      //   background-color: $Color5;
+      // }
+    }
+    h2 {
+      font-size: 1.75vw;
+      line-height: 1.35;
+      font-weight: lighter;
+      word-spacing: 0.1vw;
+    }
+  }
+  .home__button {
+    bottom: 20%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 0;
+    outline: none;
+    border: 0.15625vw solid $Color5;
+    background-color: transparent;
+    color: $Color5;
+    padding: 1.5625vw;
+    font-size: 1.75vw;
+    word-spacing: 0.1vw;
+    font-family: $PrimaryFont;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    &:hover {
+      background-color: $Color4;
+      border-color: $Color4;
+    }
+  }
+}

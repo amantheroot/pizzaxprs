@@ -1,0 +1,19 @@
+{
+  "name": "pizza__xprs__site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "scss": "node-sass -w src/styles/*.scss dist/styles.css --output-style compressed",
+    "es": "babel -w src -d dist --presets=env,minify"
+  },
+  "keywords": [],
+  "author": "Aman",
+  "license": "None",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
+    "node-sass": "^4.11.0"
+  }
+}

@@ -1,0 +1,47 @@
+/*COLOR PALETTE*/
+$Color1: black;
+$Color2: #0c0c0c;
+$Color3: #111111;
+$Color4: #e99700;
+$Color5: white;
+
+/*FONTS*/
+@font-face {
+  font-family: "Rockwell";
+  src: url("../../../dist/images/fonts/ROCK.TTF");
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../../../dist/images/fonts/rockb.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Rockwell";
+  src: url("../../../dist/images/fonts/rockl.ttf");
+  font-weight: 900;
+}
+
+$PrimaryFont: "Times New Roman";
+$PrimaryFont: "Rockwell";
+$SecondaryFont: Helvetica, sans-serif;
+
+/*ALL*/
+$BreakingPoint: 860px;
+$SecondBreakingPoint: 460px;
+
+/*LOADING*/
+$loadingIconWidth: 250px;
+$SmallloadingIconWidth: 175px;
+$SpinDuration: 16s;
+
+/*NAVIGATION*/
+$logoHeight: 70px;
+$logoMargin: 5px;
+$NavHeight: $logoHeight + (2 * $logoMargin) + 3px;
+
+/*ABOUT*/
+$aboutImgWidth: 85vw;
+
+/*GALLERY*/
+$galleryWidth: $aboutImgWidth;
+$galleryGap: 0.575vw;

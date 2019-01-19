@@ -1,0 +1,151 @@
+.menu {
+  text-transform: capitalize;
+  & > h1 {
+    @extend %pageheading;
+  }
+  .menu__items {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: repeat(auto, 3);
+    border: 3px solid $Color4;
+    font-family: $PrimaryFont;
+    font-weight: 900;
+    & > div > div {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      & > div:nth-child(1) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translate(50%, -50%);
+          right: 0;
+          width: 2px;
+          height: 70%;
+          background-color: $Color4;
+        }
+      }
+    }
+    h2 {
+      font-weight: 900;
+      font-size: 2.15rem;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 3px;
+        background-color: $Color1;
+      }
+    }
+    h3 {
+      font-weight: 900;
+      font-size: 0.95rem;
+      font-style: italic;
+    }
+    p {
+      text-align: center;
+      margin-top: -5px;
+    }
+    ul {
+      padding: 0;
+    }
+    .mi__pizzas {
+      h3 {
+        margin-top: 10px;
+      }
+      ul {
+        margin-top: 15px;
+        padding: 0 60px;
+        position: relative;
+        li {
+          font-size: 1rem;
+          margin: 10px;
+          em {
+            display: block;
+          }
+        }
+      }
+    }
+    .mi__burgers {
+      ul {
+        margin-top: 10px;
+        li {
+          text-align: center;
+          margin: 3px;
+        }
+      }
+    }
+    .mi__kids {
+      ul {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        li {
+          text-align: center;
+          &:nth-child(1) {
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translate(50%, -50%);
+              right: 0;
+              width: 2px;
+              height: 125%;
+              background-color: $Color4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $BreakingPoint) {
+  .menu > .menu__items {
+    width: 420px;
+  }
+  .menu > .menu__items > .mi__pizzas > div > div > ul {
+    padding: 0 40px;
+  }
+  .menu > .menu__items > div > div > div:nth-child(1)::after {
+    display: none;
+  }
+  .menu__items > .mi__kids > ul > li:nth-child(1)::after {
+    display: none;
+  }
+  .menu > .menu__items > div > div {
+    grid-template-columns: 100%;
+  }
+  .menu > .menu__items > .mi__kids > ul {
+    grid-template-columns: 100%;
+    li {
+      margin: 3px;
+    }
+  }
+  .menu > .menu__items h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: $SecondBreakingPoint) {
+  .menu > .menu__items {
+    width: 300px;
+  }
+  .menu > .menu__items > .mi__pizzas > div > div > ul {
+    padding: 0 20px;
+  }
+}
