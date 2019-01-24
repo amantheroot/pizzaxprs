@@ -155,3 +155,7 @@ window.addEventListener("scroll", () => {
   let homewall = document.getElementsByClassName("home__wallpaper")[0];
   homewall.style.top = window.scrollY / 1.5 + "px";
 });
+
+//###########################################################################
+const footerYear = document.getElementsByClassName("footer__year")[0];
+footerYear.innerHTML = new Date().getFullYear();
